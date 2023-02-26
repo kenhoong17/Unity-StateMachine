@@ -2,9 +2,9 @@ namespace XTT
 {
     public abstract class ABaseState
     {
-        protected StateManager m_stateManager = null;
+        protected StateManager<ABaseState> m_stateManager = null;
 
-        public ABaseState Init( StateManager stateManager )
+        public ABaseState Init( StateManager<ABaseState> stateManager )
         {
             this.m_stateManager = stateManager;
             return this;
